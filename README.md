@@ -1,2 +1,2 @@
 # Formulario-Email
-Formulário em HTML que faz envio das informações por e-mail.
+Formulário em HTML que faz envio das informações por e-mail utilizando PHP.
