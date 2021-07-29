@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Formulario - E-mail</title>
+
+		<!-- Favicon -->
+	    <link rel="shortcut icon" href="img/favicon.ico">
+
+	    <!-- Style css -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	</head>
+<body>
+
+	<div class="container">
+		
+		<form class="form-horizontal" method="POST" action="php/envio.php" enctype="multipart/form-data">
+			<fieldset class="row justify-content-md-center">
+				
+				<!-- Título do formulário -->
+          		<legend>Formulário com envio de anexo por e-mail</legend>
+
+          		<!-- Campo: Nome -->
+          		<div class="form-group col-md-6">
+		            <label class="control-label" for="nome">Nome:*</label>
+		            <input id="nome" name="nome" placeholder="Informe seu nome" class="form-control input-md" required type="text">
+		        </div>
+
+		        <!-- Campo: E-mail -->
+          		<div class="form-group col-md-6">
+		            <label class="control-label" for="email">E-mail:*</label>
+		            <input id="email" name="email" placeholder="Informe seu e-mail" class="form-control input-md" required type="text">
+		        </div>
+
+		        <!-- Campo: Telefone -->
+          		<div class="form-group col-md-6">
+		            <label class="control-label" for="number">Telefone:*</label>
+		            <input id="number" name="number" placeholder="Informe seu número de telefone" class="form-control input-md" required type="text">
+		        </div>
+
+		        <!-- Campo: Sexo -->
+          		<div class="form-group col-md-6">
+		            <label class="control-label" for="sexo">Sexo:*</label>
+		            <select class="form-control" id="sexo" name="sexo" required>
+                        <option value="" disabled selected>Escolha uma opção...</option>
+                        <option value="masc">Masculino</option>
+                        <option value="fem">Feminino</option>
+                    </select>
+		        </div>
+
+		        <!-- Campo - Mensagem -->
+		        <div class="form-group col-md-6">
+		            <label for="mensagem">Mensagem</label>
+		            <textarea class="form-control" id="mensagem" rows="3"></textarea>
+		        </div>
+
+		        <!-- Campo: Profissão -->
+          		<div class="form-group col-md-6">
+		            <label class="control-label">Em qual ramo você trabalha:</label>
+		            <div class="form-check">
+		            	<!-- Checkbox - saude -->
+                        <input type="checkbox" id="saude" class="form-check-input" value ="saude" name="saude">
+                        <label class="form-check-label" for="saude"> Área da Saúde </label><br>
+
+                        <!-- Checkbox - tecnologia -->
+                        <input type="checkbox" id="tec" class="form-check-input" value ="tec" name="tec">
+                        <label class="form-check-label" for="tec"> Área de Tecnologia </label><br>
+
+                        <!-- Checkbox - educaçao -->
+                        <input type="checkbox" id="edu" class="form-check-input" value ="edu" name="edu">
+                        <label class="form-check-label" for="edu"> Área da Educação </label><br>
+
+                        <!-- Checkbox - serviços gerais -->
+                        <input type="checkbox" id="sg" class="form-check-input" value ="sg" name="sg">
+                        <label class="form-check-label" for="sg"> Serviços Gerais </label><br>
+                    </div>
+		        </div>
+
+		        <!-- Campo - Curriculo -->
+		        <div class="custom-file col-md-6">
+		            <input class="custom-file-input" type="file" id="curriculo">
+		            <label class="custom-file-label">Anexe seu curriculo</label>
+		        </div>
+
+		        <!-- Quebrando a linha -->
+		        <div class="w-100"></div>
+
+		        <!-- Left -->
+		        <div class="col col-lg-2"></div>
+
+		        <!-- Botão - Enviar -->
+                <div class="form-group col-md-auto">
+                    <label class="control-label" for="submit"></label>
+                    <button type="submit" class="btn btn-success">Enviar</button>
+                </div>
+                <!-- Right -->
+                <div class="col col-lg-2"></div>
+
+			</fieldset>
+		</form>
+
+	</div>
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

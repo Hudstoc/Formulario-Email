@@ -1,0 +1,13 @@
+body{
+	margin: 200px;
+	padding: 16px;
+	text-transform: uppercase;
+}
+
+legend{
+	text-align: center;
+}
+
+.form-group button{
+	margin: 20px
+}
